@@ -16,10 +16,12 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
         "drupal/admin_toolbar": "^2.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/environment_indicator": "^3.7",
         "drupal/redis": "^1.2",
         "drush/drush": "^10.1"
     },
@@ -35,6 +37,10 @@
     },
     "extra": {
         "drupal-scaffold": {
+            "excludes": [
+                "sites/development.services.yml",
+                "sites/example.settings.local.php"
+            ],
             "locations": {
                 "web-root": "web/"
             }
