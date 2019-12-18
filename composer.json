@@ -36,6 +36,11 @@
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+            "drupal/core": {
+                "Standard profile install fix": "https://www.drupal.org/files/issues/2019-12-14/drupal-standard_clean_up_hook_install-2357215-47.patch"
+            }
+        },
         "drupal-scaffold": {
             "excludes": [
                 "sites/default/default.services.yml"

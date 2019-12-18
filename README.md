@@ -7,3 +7,6 @@ Start docker containers and get into the cli one:
 
 If you want to install as new site:
 `drush site-install`
+
+If you want to use existing config:
+`drush si --existing-config`
