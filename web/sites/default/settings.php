@@ -123,9 +123,9 @@ if (getenv('LAGOON_ROUTES')) {
 }
 
 ### Temp directory
-if (getenv('TMP')) {
-  $config['system.file']['path']['temporary'] = getenv('TMP');
-}
+// if (getenv('TMP')) {
+//   $config['system.file']['path']['temporary'] = getenv('TMP');
+// }
 
 ### Hash Salt
 if (getenv('LAGOON')) {

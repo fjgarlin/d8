@@ -10,3 +10,6 @@ If you want to install as new site:
 
 If you want to use existing config:
 `drush si --existing-config`
+
+If you want to update core:
+`composer update drupal/core drupal/core-recommended --with-dependencies`
