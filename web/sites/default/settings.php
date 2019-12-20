@@ -121,6 +121,11 @@ if (getenv('LAGOON_ROUTES')) {
     '^' . str_replace(['.', 'https://', 'http://', ','], ['\.', '', '', '|'], getenv('LAGOON_ROUTES')) . '$', // escape dots, remove schema, use commas as regex separator
    );
 }
+elseif (getenv('LAGOON_ROUTE')) {
+  $settings['trusted_host_patterns'] = array(
+    '^' . str_replace(['.', 'https://', 'http://', ','], ['\.', '', '', '|'], getenv('LAGOON_ROUTE')) . '$', // escape dots, remove schema, use commas as regex separator
+   );
+}
 
 ### Temp directory
 // if (getenv('TMP')) {
