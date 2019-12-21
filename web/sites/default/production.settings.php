@@ -23,6 +23,6 @@ $config['system.performance']['js']['preprocess'] = 1;
 // Disabling stage file proxy on production, with that the module can be enabled even on production
 $config['stage_file_proxy.settings']['origin'] = FALSE;
 
-$config['environment_indicator.indicator']['bg_color'] = '#FF5555';
-$config['environment_indicator.indicator']['fg_color'] = '#555533';
+$config['environment_indicator.indicator']['bg_color'] = '#FF0000';
+$config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
 $config['environment_indicator.indicator']['name'] = 'Production';
