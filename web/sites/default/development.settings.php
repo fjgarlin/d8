@@ -27,3 +27,7 @@ $config['system.performance']['js']['preprocess'] = 0;
 if (getenv('LAGOON_PRODUCTION_URL')){
   $config['stage_file_proxy.settings']['origin'] = getenv('LAGOON_PRODUCTION_URL');
 }
+
+$config['environment_indicator.indicator']['bg_color'] = '#FF5555';
+$config['environment_indicator.indicator']['fg_color'] = '#555533';
+$config['environment_indicator.indicator']['name'] = 'Development';

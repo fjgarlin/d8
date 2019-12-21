@@ -23,6 +23,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/environment_indicator": "^3.7",
         "drupal/redis": "^1.2",
+        "drupal/stage_file_proxy": "^1.0@RC",
         "drush/drush": "^10.1"
     },
     "require-dev": {
@@ -37,9 +38,7 @@
     },
     "extra": {
         "patches": {
-            "drupal/core": {
-                "Standard profile install fix": "https://www.drupal.org/files/issues/2019-12-14/drupal-standard_clean_up_hook_install-2357215-47.patch"
-            }
+            
         },
         "drupal-scaffold": {
             "excludes": [
